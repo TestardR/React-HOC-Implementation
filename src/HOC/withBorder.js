@@ -1,7 +1,7 @@
 import React from "react";
 
 // Higher order component
-export default (Component, customStyle) => {
+export default function withBorder(Component, customStyle) {
   class WithBorder extends React.Component {
     render() {
       const style = {
@@ -14,4 +14,4 @@ export default (Component, customStyle) => {
   }
 
   return WithBorder;
-};
+}
